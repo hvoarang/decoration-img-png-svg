@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-size: 20px;
   font-family: Monaco serif;
   background-color: #dfdfdf
@@ -60,4 +61,180 @@ a {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ===================================== */
+.squaere {
+  padding: 10px;
+  color: white;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-color: green;
+  border-radius: 8px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.figure {
+  background-image: url(/image/squaere.png);
+  background-size: 20px;
+}
+
+
+
+.contain {
+  width: 200px;
+  background-size: contain;
+}
+
+.cover {
+  width: 200px;
+  background-size: cover;
+}
+
+/* ================================ */
+.attachment {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  background-image: url("https://cdn.pixabay.com/photo/2020/10/07/10/51/mountains-5634817_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /*  Comment out this line  */
+  background-attachment: fixed;
+  border-radius: 8px;
+}
+
+.box {
+  height: 300px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
+
+
+.box:nth-child(1) {
+  background-color: #2196f3;
+}
+
+.box:nth-child(2) {
+  background-color: #4caf50;
+}
+
+.box:nth-child(3) {
+  background-color: #ff9800;
+}
+
+.box:nth-child(4) {
+  background-color: #e91e63;
+}
+
+/* ================================ */
+
+
+.multi {
+  width: 150px;
+  height: 150px;
+  background-image: url(/image/squaere.png), url(/image/squaere-blue.png), url(/image/squaere-yellow.png);
+  background-size: 50px, 50px, 50px, cover;
+  background-repeat: no-repeat;
+  background-position: top 20px right 30px, top 70px center, 10px 6px,
+    center;
+}
+
+/* ================================ */
+
+.base {
+  margin: 0;
+  width: 480px;
+}
+
+.base>img {
+  max-width: 100%;
+  outline: 2px dashed #2a2a2a;
+  border-radius: 8px;
+}
+
+
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  flex-basis: calc(100% / 2 - 20px);
+  margin: 0;
+}
+
+.card,
+.base {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.obj__box {
+  position: relative;
+  height: 180px;
+  width: 100%;
+  outline: 2px dashed #2a2a2a;
+  border-radius: 8px;
+}
+
+.obj__box>img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.card:nth-child(1) img {
+  object-fit: fill;
+}
+
+.card:nth-child(2) img {
+  object-fit: contain;
+}
+
+.card:nth-child(3) img {
+  object-fit: cover;
+}
+
+.card:nth-child(4) img {
+
+  object-fit: scale-down;
+}
+
+.card:nth-child(5) img {
+  object-fit: none;
+}
+
+/* ======================== */
+
+
+.card__one:nth-child(1) img {
+  object-fit: fill;
+  object-position: 50px 50px;
+}
+
+.card__two:nth-child(2) img {
+  object-fit: contain;
+  object-position: left bottom;
+}
+
+.card__three:nth-child(3) img {
+  object-fit: cover;
+  object-position: 20% 30px;
+}
+
+.card__four:nth-child(4) img {
+  object-fit: scale-down;
+  object-position: right top;
 }
