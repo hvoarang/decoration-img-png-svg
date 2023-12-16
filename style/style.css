@@ -79,7 +79,7 @@ a {
 }
 
 .figure {
-  background-image: url(./image/squaere.png);
+  background-image: url(./images/squaere.png);
   background-size: 20px;
   z-index: 2;
 }
@@ -144,7 +144,7 @@ a {
 .multi {
   width: 150px;
   height: 150px;
-  background-image: url(/image/squaere.png), url(/image/squaere-blue.png), url(/image/squaere-yellow.png);
+  background-image: url(/images/squaere.png), url(/images/), url(/images/squaere-yellow.png);
   background-size: 50px, 50px, 50px, cover;
   background-repeat: no-repeat;
   background-position: top 20px right 30px, top 70px center, 10px 6px,
