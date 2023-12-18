@@ -78,8 +78,9 @@ a {
   z-index: 1;
 }
 
+.squaere,
 .figure {
-  background-image: url(./images/squaere.png);
+  background-image: url(/images/squaere.png);
   background-size: 20px;
   z-index: 2;
 }
