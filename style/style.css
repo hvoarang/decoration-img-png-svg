@@ -143,7 +143,7 @@ a {
 
 
 .multi {
-  width: 151px;
+  width: 150px;
   height: 150px;
   background-image: url(/images/squaere.png), url(/images/), url(/images/squaere-yellow.png);
   background-size: 50px, 50px, 50px, cover;
